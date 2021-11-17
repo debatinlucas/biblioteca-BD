@@ -31,4 +31,4 @@
     }
 ?>
 <br/><br/>
-<button type="button" onclick="location.href='editar.php?id=<?php echo $id; ?>'">Voltar</button>
+<button type="button" onclick="location.href='../index.php'">Voltar</button>

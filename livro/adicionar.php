@@ -5,18 +5,18 @@
         <title>Sistema de Biblioteca</title>
     </head>
     <body>
-        <h2>Adicionar Alunos</h2>
+        <h2>Adicionar Livros</h2>
         <small>*campos obrigatórios</small>
         <br/><br/>
         <form action="adicionar_controller.php" method="post">
             <label for="nome">Nome*</label>
-            <input type="text" name="nome" id="nome" required="true" maxlength="60"/>
+            <input type="text" name="nome" id="nome" required="true" maxlength="100"/>
             <br/><br/>
-            <label for="email">E-mail*</label>
-            <input type="email" name="email" id="email" required="true" maxlength="150"/>
+            <label for="resumo">Resumo*</label>
+            <textarea name="resumo" id="resumo" rows="3" required="true" maxlength="500"></textarea>
             <br/><br/>
-            <label for="senha">Senha*</label>
-            <input type="password" name="senha" id="senha" required="true" maxlength="12"/>
+            <label for="estoque_atual">Estoque Atual*</label>
+            <input type="number" name="estoque_atual" id="estoque_atual" required="true" maxlength="3"/>
             <br/><br/>
             <button type="button" onclick="location.href='../index.php'">Voltar</button>
             <button type="submit">Salvar</button>
